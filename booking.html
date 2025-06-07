@@ -1,34 +1,39 @@
 
 <!DOCTYPE html>
-<html lang="am">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ቦታ መያዣ - ዝናቡ ሪዞርት</title>
-    <link rel="stylesheet" href="../styles.css">
+    <title>Booking - Zinabu Resort</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <a href="../booking.html">English</a> | <a href="booking.html">አማርኛ</a>
-    </nav>
-    <header>
-        <h1>ቦታ መያዣ</h1>
-    </header>
-    <section>
-        <form action="mailto:gudaycollege@gmail.com" method="post" enctype="text/plain">
-            <label>ስም:</label><br>
-            <input type="text" name="name"><br><br>
+    <h1>Book Your Stay</h1>
+    <form action="https://formspree.io/f/xwkgoojj" method="POST" style="max-width: 600px; margin: auto;">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
 
-            <label>ኢሜል:</label><br>
-            <input type="email" name="email"><br><br>
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
 
-            <label>ቀን መያዣ:</label><br>
-            <input type="date" name="date"><br><br>
+        <label for="checkin">Check-in Date:</label><br>
+        <input type="date" id="checkin" name="checkin" required><br><br>
 
-            <label>መረጃ ተጨማሪ:</label><br>
-            <textarea name="message"></textarea><br><br>
+        <label for="checkout">Check-out Date:</label><br>
+        <input type="date" id="checkout" name="checkout" required><br><br>
 
-            <input type="submit" value="አስረክብ">
-        </form>
-    </section>
+        <label for="room">Room Type:</label><br>
+        <select id="room" name="room">
+            <option value="standard">Standard</option>
+            <option value="deluxe">Deluxe</option>
+            <option value="suite">Suite</option>
+        </select><br><br>
+
+        <label for="message">Special Requests:</label><br>
+        <textarea id="message" name="message" rows="4"></textarea><br><br>
+
+        <button type="submit">Submit Booking</button>
+    </form>
+
+    <p style="text-align: center; margin-top: 20px;">Thank you! We will contact you soon.</p>
 </body>
 </html>
