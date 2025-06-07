@@ -1,0 +1,1 @@
+document.getElementById('langToggle')?.addEventListener('click', () => alert('Toggle language'));
