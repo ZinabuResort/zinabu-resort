@@ -1,1 +1,101 @@
-<!DOCTYPE html><html><head><title>Rooms</title></head><body><h1>Our Rooms</h1></body></html>
+# Translations for all key pages in Amharic
+
+# Amharic Rooms & Rates
+rooms_am = """
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <title>ክፍሎች እና ዋጋዎች - ዝናቡ ሪዞርት</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav>
+        <a href="../rooms.html">English</a> | <a href="rooms.html">አማርኛ</a>
+    </nav>
+    <header>
+        <h1>ክፍሎች እና ዋጋዎች</h1>
+    </header>
+    <section>
+        <p>ዝናቡ ሪዞርት ለእርስዎ የሚስቱ እና የተደላድለ ክፍሎችን በተመጣጣኝ ዋጋ ያቀርባል።</p>
+        <ul>
+            <li>መደበኛ ክፍል – 1000 ብር / ቀን</li>
+            <li>የባለጌ ክፍል – 1500 ብር / ቀን</li>
+            <li>የቤተሰብ ክፍል – 2000 ብር / ቀን</li>
+        </ul>
+    </section>
+</body>
+</html>
+"""
+
+# Amharic Booking Page
+booking_am = """
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <title>ቦታ መያዣ - ዝናቡ ሪዞርት</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav>
+        <a href="../booking.html">English</a> | <a href="booking.html">አማርኛ</a>
+    </nav>
+    <header>
+        <h1>ቦታ መያዣ</h1>
+    </header>
+    <section>
+        <form action="mailto:gudaycollege@gmail.com" method="post" enctype="text/plain">
+            <label>ስም:</label><br>
+            <input type="text" name="name"><br><br>
+
+            <label>ኢሜል:</label><br>
+            <input type="email" name="email"><br><br>
+
+            <label>ቀን መያዣ:</label><br>
+            <input type="date" name="date"><br><br>
+
+            <label>መረጃ ተጨማሪ:</label><br>
+            <textarea name="message"></textarea><br><br>
+
+            <input type="submit" value="አስረክብ">
+        </form>
+    </section>
+</body>
+</html>
+"""
+
+# Amharic Contact Page
+contact_am = """
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <title>አግኙን - ዝናቡ ሪዞርት</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav>
+        <a href="../contact.html">English</a> | <a href="contact.html">አማርኛ</a>
+    </nav>
+    <header>
+        <h1>አግኙን</h1>
+    </header>
+    <section>
+        <p>ዝናቡ ሪዞርትን በዚህ ኢሜል ያግኙን: <strong>gudaycollege@gmail.com</strong></p>
+    </section>
+</body>
+</html>
+"""
+
+# Write the translated files to the /am folder
+with open(os.path.join(amharic_dir, "rooms.html"), "w") as f:
+    f.write(rooms_am)
+
+with open(os.path.join(amharic_dir, "booking.html"), "w") as f:
+    f.write(booking_am)
+
+with open(os.path.join(amharic_dir, "contact.html"), "w") as f:
+    f.write(contact_am)
+
+"All Amharic pages have been created and saved in the '/am' folder."
